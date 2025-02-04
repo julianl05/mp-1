@@ -136,20 +136,4 @@ footer {
         width: 100%;
         font-size: calc(5px + 2vw);
     }
-    #profile-container {
-        flex-direction: column;
-    }
-    #profile-pic {
-        width: 100%;
-        margin: auto;
-    }
-    #profile-pic-container {
-        width: 100%;
-        margin: auto;
-    }
-    #about-container {
-        width: 100%;
-        margin: auto;
-    }
-    
 }
