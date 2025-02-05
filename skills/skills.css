@@ -2,7 +2,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: "Space Mono", Verdana, Arial, sans-serif;
+    font-family: "Space Mono", Helvetica, Verdana, Arial, sans-serif;
 }
 
 #page-wrapper{
@@ -69,34 +69,13 @@ main {
     color: #000000;
     width: 80%;
     padding: 1vh 1vw;
-    font-size: calc(5px + 1.5vw);
+    font-size: calc(5px + 1vw);
     height: 100vh;
 }
 
 main h3 {
     margin: 1vh 1vw;
     text-align: center;
-}
-
-#skills-container {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-evenly; */
-    align-items: center;
-}
-main table {
-    width: 70%;
-    border: 1px solid #000000;
-}
-
-main table td {
-    border: 1px solid #000000;
-    padding: 1vh 1vw;
-}
-
-main table th {
-    border: 1px solid #000000;
-    padding: 1vh 1vw;
 }
 
 footer {
@@ -135,6 +114,28 @@ footer {
     }
     main {
         width: 100%;
-        font-size: calc(5px + 2vw);
+        
     }
+}
+
+/* Page specific styling below: */
+#skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main table {
+    width: 70%;
+    border: 1px solid #000000;
+}
+
+main table td {
+    border: 1px solid #000000;
+    padding: 1vh 1vw;
+    align-content: flex-start;
+}
+
+main table th {
+    border: 1px solid #000000;
+    padding: 1vh 1vw;
 }
