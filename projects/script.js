@@ -38,7 +38,7 @@ function power() {
     document.getElementById('output').innerHTML = String(result);
 }
 
-function clear() {
+function reset() {
     console.log("testing");
     document.getElementById('first-num').value = '';
     document.getElementById('second-num').value = '';
