@@ -108,9 +108,14 @@ main table th {
     border: 1px solid #000000;
     padding: 1vh 1vw;
 }
+
+footer a {
+    color: #ffffff;
+    /* text-decoration: none; */
+}
 /* end */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     header {
         text-align: center;
         font-size: calc(5px + 2vw);
