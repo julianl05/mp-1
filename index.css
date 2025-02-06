@@ -148,7 +148,7 @@ footer a {
     }
     nav ul li {
         margin: 0 0.5%;
-        font-size: calc(5px + 1vw);
+        font-size: calc(5px + 0.8vw);
     }
     nav ul li a {
         padding: 1vw;
