@@ -144,7 +144,7 @@ footer a {
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
     nav ul li {
         margin: 0 0.5%;
