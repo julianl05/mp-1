@@ -117,7 +117,13 @@ footer a {
     margin-left: 3vw;
 }
 
-#main-text {
+#intro-text {
+    margin: 1vh 1vw;
+}
+
+#contact-container {
+    display: flex;
+    flex-direction: column;
     margin: 1vh 1vw;
 }
 /* Page specific styling end */
