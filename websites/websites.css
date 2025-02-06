@@ -108,6 +108,28 @@ footer a {
     border-radius: 10px;
 }
 
+.website-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.github{
+    width: auto;
+    font-size: calc(1px + 1vw);
+    color: #ffffff;
+    background-color: #222831;
+    border-radius: 10px;
+}
+.github:hover {
+    background-color: #4c696b;
+}
+.github a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: auto;
+}
+
 .website-flex {
     margin-top: 1%;
     display: flex;
@@ -184,8 +206,10 @@ footer a {
         flex-direction: column;
     }
 
-    .website-container h4 {
-        text-align: center;
+    .website-title {
+        flex-direction: column;
+        gap: 1vh;
+        align-items: center;
     }
 
     .website-flex {
