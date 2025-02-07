@@ -99,8 +99,8 @@ footer a {
 #activities-section {
     display: flex;
     flex-direction: column;
-    gap: 4vh;
-    background-color: #ffffff;
+    gap: 4vh; /* using gap to set spacing between containers again */
+    background-color: #ffffff; /* note difference from other pages, I set the section background instead of the containers to make a full seamless container. Did this because it looked better as there's less text on this page and not as clear of a sepration between activities. */
     border-radius: 10px;
     padding: 4%;
 }
@@ -114,11 +114,11 @@ footer a {
     margin-bottom: 1vh;
 }
 .activity-container ul {
-    border-left: 5px solid #222831;
+    border-left: 5px solid #222831; /* left border only to make the list cleaner on the eyes */
     border-radius: 1px;
     list-style: none;
     padding: 1vh 1vw;
-    margin-left: 2%;
+    margin-left: 2%; /* re-added slight indent to list to make content hierarchy clearer*/
 }
 /* end */
 
@@ -166,7 +166,7 @@ footer a {
     }
 
     .activity-container ul {
-        border-right: 5px solid #222831;
+        border-right: 5px solid #222831; /* right border added to make sections clear on mobile */
         border-radius: 5px;
         text-align: center;
     }
