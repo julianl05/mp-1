@@ -101,7 +101,7 @@ footer a {
     flex-direction: column;
     gap: 4vh;
 }
-.education-container {
+.education-container { /* having a rounded, different-colored, background to separate and organise content is a design style I use throughout my website*/
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
@@ -110,7 +110,6 @@ footer a {
 }
 .education-container h4 {
     margin-bottom: 1vh;
-    /* text-decoration: underline; */
 }
 .education-container p {
     margin-left: 1vw;

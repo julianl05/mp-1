@@ -110,19 +110,15 @@ footer a {
 .organisation-and-location, .title-and-date {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; /* using space between to make the location be to the far left but on the same line as the organisation name*/
 }
 
 .title-and-date h4 {
     font-weight: normal;
 }
 
-.organisation {
-    font-weight: bold;
-}
-
 .location {
-    font-weight: normal;
+    font-weight: normal; /* override bold weight of h4. I only want organisation name to be bolded. */ 
 }
 /* end */
 

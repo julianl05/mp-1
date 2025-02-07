@@ -168,7 +168,7 @@ footer a {
     #profile-pic {
         display: flex; /* display set to flex so that the image is centered */
         max-width: 70%;
-        margin: auto; 
+        margin: auto;  /*also needed to center image*/
         margin-bottom: 3vh;
     }
     #profile-pic-container {

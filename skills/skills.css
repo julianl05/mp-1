@@ -102,15 +102,15 @@ footer a {
 }
 main table {
     width: 70%;
-    border: 2px solid #222831;
-    border-spacing: 0;
+    border: 2px solid #222831; 
+    border-spacing: 0; /* this removes white space between the cells so the borders of table,td,th merge into each other. looks better. */
     background-color: #ffffff;
 }
 
 main table td {
     border: 2px solid #222831;
     padding: 1vh 1vw;
-    align-content: flex-start;
+    align-content: flex-start; /*i did flex-start instead of text-align: left; to stay consistent with flexbox*/ 
 }
 
 main table th {
@@ -158,12 +158,12 @@ main table th {
     }
     /* Page specific below */
     main table td {
-        text-align: center;
+        text-align: center; /*centering text in table for mobile view */
     }
 
     main table td ul {
-        padding: 0;
-        list-style: none;
+        padding: 0; 
+        list-style: none;/*removed all list styles and padding from list for mobile view to be cleaner.*/
     }
 }
 
