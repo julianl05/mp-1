@@ -133,7 +133,6 @@ footer a {
 .github a {
     color: #ffffff;
     text-decoration: none;
-    padding: auto;
 }
 
 .project-flex {
@@ -283,6 +282,10 @@ footer a {
         margin-bottom: 1vh;
     }
     /* page specific styling below */
+    .github {
+        padding: 1%;
+        border-radius: 5px;
+    }
     #project-section {
         flex-direction: column;
     }
