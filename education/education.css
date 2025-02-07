@@ -112,7 +112,7 @@ footer a {
     margin-bottom: 1vh;
 }
 .education-container p {
-    margin-left: 1vw;
+    margin-left: 1vw; /* indenting text a little to show content hierarchy */
 }
 /* end */
 
