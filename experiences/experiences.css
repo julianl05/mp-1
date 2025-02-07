@@ -98,7 +98,7 @@ footer a {
 #experiences-section {
     display: flex;
     flex-direction: column;
-    gap: 4vh;
+    gap: 4vh; /*I use gap instead of margin for the spacing between the nested containers because I wanted to specifically change the spacing only between nested elements, and not the space around them. */
 }
 .experience-container {
     display: flex;
@@ -110,11 +110,11 @@ footer a {
 .organisation-and-location, .title-and-date {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* using space between to make the location be to the far left but on the same line as the organisation name*/
+    justify-content: space-between; /* using space between and flex-direction row to achieve the left and right separation layout I was looking for. space between puts as much space as possible between items in the same flexbox div.*/
 }
 
 .title-and-date h4 {
-    font-weight: normal;
+    font-weight: normal; /* override bold weight of h4. I only want organisation name to be bolded. */ 
 }
 
 .location {
@@ -162,8 +162,8 @@ footer a {
     
     .organisation-and-location, .title-and-date {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* left and right format no longer looks good on mobile, so I switched flex-direction to column and centered everything except the bullet points.*/
+        align-items: center; /* when using flex-direction column, align-items centers horizontally, not justify content */
     }
     .title-and-date {
         margin-bottom: 1vh;

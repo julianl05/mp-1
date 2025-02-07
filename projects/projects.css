@@ -99,33 +99,35 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 4vh;
+    gap: 4vh; /*I use gap instead of margin for the spacing between the nested containers because I wanted to specifically change the spacing only between nested elements, and not the space around them. I find spacing to be more consistent this way. */
 }
 
 .project-container {
     display: flex;
     flex-direction: column;
-    gap: 1vh;
+    gap: 1vh; /*once again, using gap because its cleaner. */
     padding: 4%;
     background-color: #ffffff;
     border-radius: 10px;
 }
 
 .project-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; /* using space between and flex-direction row to achieve the left and right separation layout I was looking for. space between puts as much space as possible between items in the same flexbox div.*/
 }
 
 .github{
-    width: auto;
     font-size: calc(1px + 1vw);
     color: #ffffff;
     background-color: #222831;
     border-radius: 10px;
 }
 .github:hover {
-    background-color: #4c696b;
+    background-color: #4c696b; /* darkening the color on hover to indicate clickability */
+}
+.github:active {
+    background-color: #384d4e; /* darkening the color on click to simulate button press */
 }
 .github a {
     color: #ffffff;
@@ -136,7 +138,7 @@ footer a {
     margin-top: 1%;
     display: flex;
     flex-direction: row;
-    gap: 2vh;
+    gap: 2vh; 
 }
 
 .project-info {
@@ -157,7 +159,7 @@ footer a {
 }
 
 .project-thumbnail {
-    object-fit: cover;
+    object-fit: cover; /* learned on my own. Used to make it so that the image will be cropped instead of warped if screen size shrinks. */
     max-width: 40%;
     border: 3px solid #283738;
     border-radius: 10px;
@@ -180,7 +182,7 @@ footer a {
 #input-container {
     display: flex;
     flex-direction: row;
-    gap: 1vh;
+    gap: 1vh; 
     justify-content: center;
 }
 
@@ -198,14 +200,13 @@ footer a {
 #buttons-container {
     display: flex;
     flex-direction: row;
-    gap: 1vh;
+    gap: 1vh; 
     justify-content: center;
 }
 
 #buttons-container button, #clear-button {
     padding: 1vh 2vw;
     font-size: calc(5px + 1vw);
-    border-radius: 10px;
     border: 1px solid #283738;
     border-radius: 100%;
     background-color: #31363F;
@@ -230,9 +231,6 @@ footer a {
     width: 75%;
     height: 5vw;
     background-color: #283738;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 #output {
@@ -294,7 +292,7 @@ footer a {
     .project-title {
         flex-direction: column;
         gap: 1vh;
-        align-items: center;
+        align-items: center; /* when using flex-direction column, align-items centers horizontally, not justify content */
     }
 
     .project-flex {
@@ -308,7 +306,6 @@ footer a {
 
     .project-info {
         width: 80%;
-        align-items: center;
     }
 
     .project-info p {
@@ -319,7 +316,7 @@ footer a {
         justify-content: center;
     }
     .icons img {
-        max-width: 10vw;
+        max-width: 10vw; /* making the icons larger on smaller screens since the layout now allows it */
     }
     #input-container {
         flex-direction: column;
@@ -332,7 +329,6 @@ footer a {
 
     #buttons-container {
         flex-direction: row;
-        flex-wrap: wrap;
     }
 
     #buttons-container button {
@@ -348,7 +344,6 @@ footer a {
     #output-container {
         width: 90%;
         height: 10vw;
-        justify-content: center;
     }
 }
 

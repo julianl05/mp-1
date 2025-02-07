@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Julian Lim Jun Ren Resume">
+    <meta name="description" content="Julian Lim Jun Ren's Online Resume">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resume | Contact</title>
+    <title>Resume | Projects</title>
     <link rel="stylesheet" href="projects.css" type="text/css">
 </head>
 <body>
@@ -26,18 +26,18 @@
             </nav>
             <main>
                 <h3>Projects</h3>
-                <div id="projects-section"> <!-- projects section is used to contain all the projects for convenient spacing-->
-                    <div class="project-container"> <!-- project container is used to contain each individual project, class not id so it can be repeatedly used -->
-                        <div class="project-title"> 
+                <div id="projects-section"> <!-- one wrapper is used to contain all the projects for flexbox use, just like most of my other pages-->
+                    <div class="project-container"> <!-- each project I exhibit has its own container, similar to education and experiences -->
+                        <div class="project-title"> <!-- div for title and github button for flexbox, cause I want the button on the same row but on the far right-->
                             <h4>Song Discussion Board</h4>
-                            <button class="github"><a href="https://github.com/julianl05/JDT-song-discussion-board" target="_blank">Github</a></button>
+                            <button class="github"><a href="https://github.com/julianl05/JDT-song-discussion-board" target="_blank">Github</a></button> <!-- button that links to the project's github repository by using nested anchor tag. -->
                         </div>
-                        <div class="project-flex">
+                        <div class="project-flex"> <!-- div to align nested thumbnail and info divs side by side-->
                             <img class="project-thumbnail" src="../src/images/song-discussion-board_thumbnail2.png" alt="Song Discussion Board">
-                            <div class="project-info">
+                            <div class="project-info"> <!-- div to stack description and tech stack icons vertically-->
                                 <p>Simple web app where 3 random songs are fetched from the Genius API each day for users to review and/or discuss.</p>
                                 <p><strong>Tech Stack: </strong></p>
-                                <div class="icons">
+                                <div class="icons"> <!-- div for icons so I can use flexbox to change between horizontal/vertical stack depending on screen size. all svg icons are from TechIcons-->
                                     <img src="../src/images/html.svg" alt="HTML">
                                     <img src="../src/images/css.svg" alt="CSS">
                                     <img src="../src/images/react.svg" alt="reactjs">
@@ -66,10 +66,12 @@
                             </div>
                         </div>
                     </div>
-                    <div id="calculator-container">
+                    <div id="calculator-container"> <!-- did not reuse project-container here, as my desired layout of calculator is different-->
                         <h4>JavaScript Calculator</h4>
                         <div id="input-container">
+                            <label for="first-num"></label> <!-- left labels empty for aesthetic reasons -->
                             <input type="text" id="first-num">
+                            <label for="second-num"></label>
                             <input type="text" id="second-num">
                         </div>
                         <div id="buttons-container">
@@ -82,7 +84,9 @@
                         <div id="output-container">
                             <h3 id="output"></h3>
                         </div>
-                        <button id="clear-button" onclick="reset()"> CLEAR </button>
+                        <div>
+                            <button id="clear-button" onclick="reset()"> CLEAR </button> <!--defined function as reset() instead of clear() because there seems to be some conflict wioth clear() already being reserved by JS for something else-->
+                        </div>
                     </div>
                 </div>
             </main>

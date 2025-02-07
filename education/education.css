@@ -35,8 +35,8 @@ nav ul {
     flex-direction: column;
     justify-content: space-evenly; /* space out navbar buttons evenly */
     list-style: none;
-    padding: 0px; /*remove the whitepsace at the left of ul elements */
-    margin: 0px; /*remove the whitepsace at the left of ul elements */
+    padding: 0px; /*remove the whitespace at the left of ul elements */
+    margin: 0px; /*remove the whitespace at the left of ul elements */
     height: 100%; 
 }
 
@@ -99,13 +99,13 @@ footer a {
 #education-section {
     display: flex;
     flex-direction: column;
-    gap: 4vh;
+    gap: 4vh; /*I use gap instead of margin for the spacing between the nested containers because I wanted to specifically change the spacing only between nested elements, and not the space around them. I'd need to individually specify margin top and bottom for each nested element for the same result, which is less clean. I also find it more consistent this way.  */
 }
 .education-container { /* having a rounded, different-colored, background to separate and organise content is a design style I use throughout my website*/
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
-    padding: 4%;
+    padding: 4%; /* I use 4% on all containers on my website purely because it looks right to me */
     border-radius: 10px;
 }
 .education-container h4 {
