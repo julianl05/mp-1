@@ -138,7 +138,7 @@ main table th {
         justify-content: space-evenly;
     }
     nav ul li {
-        margin: 0 0.5%;
+        margin: 0;
         font-size: calc(5px + 0.8vw);
     }
     nav ul li a {
