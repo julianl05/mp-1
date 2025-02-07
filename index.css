@@ -152,7 +152,7 @@ footer a {
         justify-content: space-evenly;
     }
     nav ul li {
-        margin: 0 0.5%;
+        margin: 0;
         font-size: calc(5px + 0.8vw);
     }
     nav ul li a {
@@ -174,8 +174,6 @@ footer a {
     }
     #profile-pic {
         display: flex;
-        /* align-self: center; */
-        /* align-content: center; */
         width: 70%;
         margin: auto;
         margin-bottom: 3vh;
