@@ -61,11 +61,11 @@ nav ul li a {
     padding: 3vh; /* padding to make anchor tags bigger and clickable like buttons*/
 }
 
-nav ul li a:hover {  /* using hover pseudoclass to make navbar buttons lighter when hovering over them*/
+nav ul li a:hover {  /* using hover pseudoclass to make navbar anchors lighter when hovering over them to indicate clickability*/
     background-color: #cff2f5;
 }
 
-nav ul li a:active { /* using active pseudoclass to make navbar buttons darker on click to simulate button press*/
+nav ul li a:active { /* using active pseudoclass to make navbar anchors darker on click to simulate button press*/
     background-color: #93adaf;
 }
 
