@@ -95,7 +95,6 @@ footer {
 
 footer a {
     color: #ffffff;
-    /* text-decoration: none; */
 }
 /* Page specific styling start: */
 #experiences-section {
@@ -128,11 +127,7 @@ footer a {
     font-weight: normal;
 }
 /* end */
-/* @media screen and (max-width:900px) {
-    .title-and-date {
-        flex-direction: column;
-    }
-} */
+
 @media screen and (max-width: 800px) {
     header {
         text-align: center;
