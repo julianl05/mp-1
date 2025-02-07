@@ -55,7 +55,7 @@ nav ul li a {
     text-decoration: none; /*removing underline from links */
     font-weight:bold; /* making navbar have bold text for clarity */
     color: rgb(0, 0, 0);
-    border-radius: 10px;
+    border-radius: 10px; /* also rounded the corners for aesthetic reasons. this is a design style I maintain throughout my site in many elements. */
     width: 100%; /* width and height set to 100% so that the anchor take up the full width and height of the parent li element */
     height: 100%;
     padding: 3vh; /* padding to make anchor tags bigger and clickable like buttons*/

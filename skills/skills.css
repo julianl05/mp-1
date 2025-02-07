@@ -57,7 +57,7 @@ nav ul li a {
     color: rgb(0, 0, 0);
     border-radius: 10px;
     width: 100%; /* width and height set to 100% so that the anchor take up the full width and height of the parent li element */
-    height: 100%;
+    height: 100%; /* also rounded the corners for aesthetic reasons. this is a design style I maintain throughout my site in many elements. */
     padding: 3vh; /* padding to make anchor tags bigger and clickable like buttons*/
 }
 
