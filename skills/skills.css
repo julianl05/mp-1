@@ -93,6 +93,9 @@ footer {
     color: #ffffff;
 }
 
+footer a {
+    color: #ffffff;
+}
 /* Page specific styling start: */
 #skills-container {
     display: flex;
@@ -113,11 +116,6 @@ main table td {
 main table th {
     border: 1px solid #000000;
     padding: 1vh 1vw;
-}
-
-footer a {
-    color: #ffffff;
-    /* text-decoration: none; */
 }
 /* end */
 
@@ -150,30 +148,14 @@ footer a {
     }
     main {
         width: 100%;
+        height: 80vh;
         padding: 1vh 2vw;
+        font-size: calc(5px + 1.5vw);
     }
     main h3 {
         margin-bottom: 1vh;
     }
-    #profile-container {
-        flex-direction: column;
-    }
-    #profile-pic {
-        display: flex;
-        /* align-self: center; */
-        /* align-content: center; */
-        width: 70%;
-        margin: auto;
-        margin-bottom: 3vh;
-    }
-    #profile-pic-container {
-        width: 100%;
-        margin: auto;
-    }
-    #about-container {
-        width: 100%;
-        margin: auto;
-    }
+    /* Page specific below */
     
 }
 
