@@ -104,17 +104,19 @@ footer a {
 }
 main table {
     width: 70%;
-    border: 1px solid #000000;
+    border: 2px solid #222831;
+    border-spacing: 0;
+    background-color: #ffffff;
 }
 
 main table td {
-    border: 1px solid #000000;
+    border: 2px solid #222831;
     padding: 1vh 1vw;
     align-content: flex-start;
 }
 
 main table th {
-    border: 1px solid #000000;
+    border: 2px solid #222831;
     padding: 1vh 1vw;
 }
 /* end */
@@ -156,6 +158,13 @@ main table th {
         margin-bottom: 1vh;
     }
     /* Page specific below */
-    
+    main table td {
+        text-align: center;
+    }
+
+    main table td ul {
+        padding: 0;
+        list-style: none;
+    }
 }
 
