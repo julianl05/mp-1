@@ -1,31 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'); /*used a google font as the assignment sheet said we could*/
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: "Space Mono", Helvetica, Verdana, Arial, sans-serif;
+    font-family: "Space Mono", Helvetica, Verdana, Arial, sans-serif; 
 }
 
 #page-wrapper{
-    width: 80vw;
+    width: 80vw; 
     margin: 0 auto;
 }
 
 header {
     background-color: #222831;
-    padding: 1vh 1vw;
-    width: 100%;
+    padding: 1vh 1vw; /* chose to use vh and vw for variable screen size responsiveness */
+    width: 100%; 
     color: #EEEEEE;
     font-size: calc(1px + 1vw);
 }
 
 #content-container {
-    display: flex;
-    flex-direction: row;
+    display: flex; /* using flexbox to allow more precise layout of page*/
+    flex-direction: row; /* flex direction set to row so that the navbar and main content are side by side */
 }
 
 nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* make navbar stacked vertically */
     background-color: #31363F;
     width: 30%;
 }
@@ -33,38 +33,39 @@ nav {
 nav ul {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-evenly; /* space out navbar buttons evenly */
     list-style: none;
-    padding: 0px;
-    margin: 0px;
-    height: 100%;
+    padding: 0px; /*remove the whitepsace at the left of ul elements */
+    margin: 0px; /*remove the whitepsace at the left of ul elements */
+    height: 100%; 
 }
 
 nav ul li {
-    margin: 2vh 10%;
+    margin: 2vh 10%; /* in combination with parent's space-evenly to ensure good spacing */
     font-size: calc(5px + 2vw);
+    height: 100%; /* li height set to 100% so if screen height increases, the anchors set to height 100% can increase too*/
 }
 
 nav ul li a {
     display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: #9ae0e4;
-    text-decoration: none;
-    font-weight:bold;
+    text-align: center; /* center navbar text */
+    justify-content: center; /*center navbar text both vertically (because its a column not row)*/
+    align-items: center; /* and horizontally */
+    background-color: #9ae0e4; /* filled background to make anchor tags look like buttons */
+    text-decoration: none; /*removing underline from links */
+    font-weight:bold; /* making navbar have bold text for clarity */
     color: rgb(0, 0, 0);
     border-radius: 10px;
-    width: 100%;
+    width: 100%; /* width and height set to 100% so that the anchor take up the full width and height of the parent li element */
     height: 100%;
-    padding: 3vh;
+    padding: 3vh; /* padding to make anchor tags bigger and clickable like buttons*/
 }
 
-nav ul li a:hover {
+nav ul li a:hover {  /* using hover pseudoclass to make navbar buttons lighter when hovering over them*/
     background-color: #cff2f5;
 }
 
-nav ul li a:active {
+nav ul li a:active { /* using active pseudoclass to make navbar buttons darker on click to simulate button press*/
     background-color: #93adaf;
 }
 
@@ -72,15 +73,15 @@ main {
     background-color: #EEEEEE;
     color: #000000;
     width: 80%;
-    padding: 3vh 3vw;
+    padding: 3vh 3vw; /* thicker padding in main to ensure readability */
     font-size: calc(5px + 1vw);
-    height: auto;
+    height: auto; /* using height auto and min-height so page extends according to content but still has a baseline */
     min-height: 100vh;
 }
 
 main h3 {
     text-align: center;
-    margin-bottom: 2vh;
+    margin-bottom: 2vh;  /* adds a bit of separation to make it clearer that this is the page header*/
 }
 
 footer {
@@ -92,13 +93,12 @@ footer {
 
 footer a {
     color: #ffffff;
-    /* text-decoration: none; */
 }
 /* Page specific styling start: */
 #profile-container {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* flex direction set to row so that the profile picture and about section are side by side */
     padding: 1vh 1vw;
 }
 
@@ -122,12 +122,6 @@ footer a {
 #intro-text {
     margin: 1vh 1vw;
 }
-
-#contact-container {
-    display: flex;
-    flex-direction: column;
-    margin: 1vh 1vw;
-}
 /* Page specific styling end */
 
 @media screen and (max-width: 800px) {
@@ -136,30 +130,30 @@ footer a {
         font-size: calc(5px + 2vw);
     }
     #content-container {
-        flex-direction: column;
+        flex-direction: column; /* change flex direction to column to ensure mobile device scrolling ease*/
     }
     nav {
         width: 100%;
     }
     nav ul {
-        padding: 1%;
+        padding: 1%; /* minimising padding to fit all navbar buttons in space*/
         width: 100%;
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-direction: row; /* make navbar buttons side by side on mobile*/
+        justify-content: space-evenly; 
     }
     nav ul li {
         margin: 0;
-        font-size: calc(5px + 0.8vw);
+        font-size: calc(5px + 0.8vw); /* smaller font size to accomodate narrower space*/
     }
     nav ul li a {
         padding: 1vw;
         border-radius: 0px;;
-        border: 1px solid #283738;
+        border: 1px solid #283738; /* small border on mobile to make navbar buttons a little clearer */
     }
     main {
         width: 100%;
-        height: auto;
+        height: auto; /* using height auto and min-height so page extends according to content */
         min-height: 80vh;
         padding: 1vh 4vw;
         font-size: calc(5px + 1.5vw);
@@ -167,18 +161,19 @@ footer a {
     main h3 {
         margin-bottom: 1vh;
     }
+    /* page specific styling below */
     #profile-container {
         flex-direction: column;
     }
     #profile-pic {
-        display: flex;
+        display: flex; /* display set to flex so that the image is centered */
         max-width: 70%;
-        margin: auto;
+        margin: auto; 
         margin-bottom: 3vh;
     }
     #profile-pic-container {
         width: 100%;
-        margin: auto;
+        margin: auto; 
     }
     #about-container {
         width: 100%;
