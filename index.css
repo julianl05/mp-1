@@ -103,7 +103,7 @@ footer a {
 }
 
 #profile-pic {
-    width: 100%;
+    max-width: 100%;
     border-radius: 10%;
     margin: 1vh 1vw;
     margin-right: 3vw;
@@ -115,8 +115,6 @@ footer a {
 
 #about-container {
     width: 65%;
-    /* padding: 1vh 1vw;
-    padding-left: 3vw; */
     margin: 1vh 1vw;
     margin-left: 3vw;
 }
@@ -174,7 +172,7 @@ footer a {
     }
     #profile-pic {
         display: flex;
-        width: 70%;
+        max-width: 70%;
         margin: auto;
         margin-bottom: 3vh;
     }

@@ -157,11 +157,12 @@ footer a {
 }
 
 .icons img {
-    width: 4vw;
+    max-width: 15%;
 }
 
 .project-thumbnail {
-    width: 40%;
+    object-fit: cover;
+    max-width: 40%;
     border: 3px solid #283738;
     border-radius: 10px;
 }
@@ -302,8 +303,7 @@ footer a {
     }
 
     .project-thumbnail {
-        width: 70%;
-        object-fit:cover;
+        max-width: 70%;
     }
 
     .project-info {
@@ -319,7 +319,7 @@ footer a {
         justify-content: center;
     }
     .icons img {
-        width: 10vw;
+        max-width: 10vw;
     }
     #input-container {
         flex-direction: column;
